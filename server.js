@@ -1,11 +1,12 @@
 var express = require('express');
 var app = express();
+const path = require('path');
 
-app.use(express.static(__dirname + '/src'));
+app.use(express.static(__dirname + '/dist/finalport'));
 app.listen(process.env.PORT || 8080);
 
 app.get('/*', function(req, res){
-    res.sendFile(path.json(__dirname + '/src/index.html'));
+    res.sendFile(path.json(__dirname + '/dist/finalport/index.html'));
 })
 
 console.log('Console listening!');
