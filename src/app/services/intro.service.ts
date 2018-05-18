@@ -14,10 +14,11 @@ export class InfoService {
     return this.http.get('http://localhost:8080/api/userinfo/')  
             .pipe(map((response: Response) =>response.json()))               
   } 
+  /*
   getProinfo(){       
     return this.http.get('http://localhost:8080/api/proinfo/')  
             .pipe(map((response: Response) =>response.json()))               
-  } 
+  } */
   /* 
   getAbouts(){       
     return this.http.get('http://localhost:8080/api/GetAbouts/')  
